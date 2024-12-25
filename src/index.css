@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Christmas Script";
+    src: url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+  }
+}
+
+.font-script {
+  font-family: "Great Vibes", cursive;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1a2b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #faf3e7;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes flyingSanta {
+  0% {
+    transform: translateX(-120%) scale(0.8);
+  }
+  50% {
+    transform: translateX(0) scale(1);
+  }
+  100% {
+    transform: translateX(120%) scale(0.8);
+  }
+}
+
+.santa-animation {
+  animation: flyingSanta 15s infinite alternate ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .santa-animation {
+    animation-duration: 12s;
+  }
+}
+
+@media (max-width: 640px) {
+  .santa-animation {
+    animation-duration: 10s;
+  }
+}
