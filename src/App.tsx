@@ -22,16 +22,14 @@ function App() {
         <ParallaxLayer
           className="hidden md:block top-[-200px] right-[-30%] w-[1200px] h-[1200px] bg-contain bg-no-repeat"
           style={{
-            backgroundImage:
-              "url(/cloud.png)",
+            backgroundImage: "url(/cloud.png)",
             transform: `translateY(${scrollPosition * 0.2}px)`,
           }}
         />
         <ParallaxLayer
           className="hidden md:block bottom-[-10px] left-[-10%] w-[800px] h-[500px] bg-contain bg-no-repeat"
           style={{
-            backgroundImage:
-              "url(/cloud.png)",
+            backgroundImage: "url(/cloud.png)",
             transform: `translateY(${scrollPosition * 0.3}px)`,
           }}
         />
@@ -40,8 +38,7 @@ function App() {
         <ParallaxLayer
           className="top-[10%] md:top-0 left-1/2 md:left-0 -translate-x-1/2 md:-translate-x-1/2 md:-translate-y-1/2 w-[150px] md:w-[250px] h-[150px] md:h-[250px] bg-contain bg-no-repeat"
           style={{
-            backgroundImage:
-              "url(/moon-2.webp)",
+            backgroundImage: "url(/moon-2.webp)",
             transform: `translateY(${scrollPosition * 0.1}px)`,
           }}
         />
@@ -66,8 +63,7 @@ function App() {
         <ParallaxLayer
           className="bottom-5 w-full h-[200px] sm:h-[300px] md:h-[400px] bg-contain bg-repeat-x"
           style={{
-            backgroundImage:
-              "url(/mountain.webp)",
+            backgroundImage: "url(/mountain.webp)",
             transform: `translateY(${scrollPosition * 0.5}px)`,
           }}
         />
@@ -76,8 +72,7 @@ function App() {
         <ParallaxLayer
           className=" bottom-0 w-full h-[150px] sm:h-[200px] md:h-[300px] bg-contain bg-repeat-x"
           style={{
-            backgroundImage:
-              "url(/trees.webp)",
+            backgroundImage: "url(/trees.webp)",
             transform: `translateY(${scrollPosition * 0.4}px)`,
           }}
         />
@@ -110,6 +105,21 @@ function App() {
       </section>
 
       <Snowfall />
+
+      {/* Signature */}
+      <footer className="fixed bottom-0 left-0 right-0 text-center text-white/80 py-4 text-[10px] backdrop-blur-sm z-10">
+        <p className="mb-1">
+          Made with ❤️ by <span className="font-semibold">Rodrigue EPUH</span>
+        </p>
+        <a
+          href="https://github.com/Rodagency10/merry-christmas.git"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-red-400 hover:text-red-300 transition-colors underline"
+        >
+          GitHub Repository
+        </a>
+      </footer>
     </div>
   );
 }
